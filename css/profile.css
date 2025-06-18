@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding-top: 70px;
+  padding-bottom: 40px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-grow: 1;
+}
+
+.container {
+  width: 100%;
+  max-width: 450px;
+  padding: 20px;
+}
+
+.profile-form {
+  border-radius: 15px;
+  padding: 30px;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.profile-form h1 {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 30px;
+  font-size: 32px;
+  color: #2e7d32;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #000;
+  font-size: 14px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px 20px;
+  border: 1px solid #4caf50;
+  border-radius: 10px;
+  font-size: 14px;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.edit-button,
+.signout-button {
+  padding: 10px 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  flex: 1;
+  margin: 0 5px;
+}
+
+.edit-button {
+  background-color: #1976d2;
+  color: white;
+}
+
+.signout-button {
+  background-color: #d32f2f;
+  color: white;
+}

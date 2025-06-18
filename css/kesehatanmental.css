@@ -1,0 +1,212 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #E9F5EC;
+    margin: 0;
+    padding: 0;
+    color: black;
+    justify-content: center;
+}
+
+header{
+    background-color: #4CAF50;
+    padding: 20px 16px;
+    color: white;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15) ;
+}
+
+header h1{
+    margin-bottom: 12px;
+    font-size: 28px;
+}
+/* Header */
+/* Logo */
+.logo {
+  height: 100px;  
+  width: auto;   
+  display: inline-block;
+  vertical-align: middle;
+  padding: 6px 10px;              
+  border-radius: 50%;            
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);  
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+/* Navigation */
+.main-nav{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.main-nav a, .dropbtn {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 6px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.main-nav a:hover{
+    background-color:rgba(255,255,255,0.3);
+}
+
+.dropdown-menu{
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+}
+.dropdown-layanan{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    border-radius: 6px;
+    z-index: 1000;
+    flex-direction: column;
+}
+.dropdown-layanan a {
+  padding: 10px 14px;
+  color: #333;
+  text-decoration: none;
+  display: block;
+  transition: background-color 0.2s ease;
+}
+
+.dropdown-layanan a:hover {
+  background-color: #f2f2f2;
+}
+
+.dropdown-menu:hover .dropdown-layanan {
+  display: flex;
+  flex-direction: column;
+}
+
+.top-bar{
+    display: flex;
+    align-items: center;
+    padding: 10px 16px;
+    background-color:#4CAF50;
+    box-shadow: 0 2px 4px gray ;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.search-bar{
+    flex: 1;
+    padding: 8px 12px;
+    border: 1px solid white;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.container-kesmental{
+    padding: 16px;
+}
+
+/* Menu Kesehatan Mental */
+.menu-kesmental{
+    margin: 20px;
+}
+
+h2{
+    font: 16px;
+    margin: 10px;
+}
+.services, 
+.issues{
+    display: flex;
+    gap: 50px;
+    overflow-x: auto;
+    padding: 10px;
+}
+
+.service-list,
+.issues-item{
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+    text-align: center;
+    box-shadow: 0 2px 6px gray;
+}
+
+.service-list img, 
+.issues-item img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin: 5px 0px 5px 0px;
+    border-radius: 10px;
+}
+
+.service-list p,
+.issues-item p{
+    font-size: 14px;
+    margin: 0;
+    color: black;
+}
+
+.service-list a{
+    text-decoration: none;
+    color: inherit
+}
+
+.service-list{
+    transition: background-color 0.3s ,transform 0.3s;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+}
+
+.service-list:hover{
+    background-color:#C8F0D4;
+    transform: scale(1.05);
+}
+
+.service-list:active{
+    background-color: #A8E0C4;
+    transform: scale(0.95);
+}
+.motivation-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.motivation-item{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: #f9f9f9; /* opsional */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+
+}
+.motivation-item p{
+    text-align: justify;
+}
+
+
+.motivation-img{
+    width: 100px;
+    height: auto;
+    margin: 0px 0px 15px 0px;
+}
+
+.issues-content{
+    margin-top: 12px;
+    font-size: 14px;
+    color: #444444;
+    line-height: 1.5;
+}

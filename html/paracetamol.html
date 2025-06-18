@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FavorMedic - Paracetamol</title>
+    <link rel="stylesheet" href="/css/detail-obat.css">
+</head>
+<body>
+     <header>
+       <img src="../assets/Logo FavourMedic.png" alt="" class="logo">
+        <div class="auth-button">
+            <a href="/html/register.html" class="btn-masuk">Masuk</a>
+            <a href="/html/register.html" class="btn-daftar">Daftar</a>
+        </div>
+       
+        <div class="nav-wrapper">
+            <nav class="main-nav">
+            <a href="index.html">Beranda</a>
+            <div class="dropdown-menu">
+                <a href="" class="dropbtn">Layanan</a>
+                <div class="dropdown-layanan">
+                    <a href="tanyadokter.html">Tanya Dokter</a>
+                    <a href="/html/toko_medis.html">Toko Medis</a>
+                    <a href="/html/janjioffline.html">Janji Offline</a>
+                    <a href="kesehatanmental.html">Kesehatan Mental</a>
+                </div>
+            </div>
+        <div class="dropdown-menu">
+            <a href="" class="dropbtn">Pesanan</a>
+            <div class="dropdown-layanan">
+                <a href="/html/keranjang.html">Keranjang</a>
+                <a href="/HTML/riwayat-pesanan.html">Riwayat Pesanan</a>
+            </div>
+
+        </div>
+        <a href="/html/profile.html">Profil</a>
+            </nav>
+
+
+        </div>
+    </header>
+
+    <main>
+        <div class="detail-container">
+            <img src="/assets/Paracetamol 500mg.jpg" alt="Paracetamol" class="obat-image">
+
+            <div class="info-obat">
+                <h2>Paracetamol</h2>
+                <p class="harga">Rp 5.000</p>
+                <p class="deskripsi"> Paracetamol adalah obat pereda nyeri dan penurun demam yang digunakan untuk sakit kepala, nyeri ringan, atau demam.</p>
+                <div class="quantity-control">
+                    <button onclick="ubahJumlah(-1)">-</button>
+                    <span id="jumlah">1</span>
+                    <button onclick="ubahJumlah(1)">+</button>
+
+                </div>
+                <button onclick="masukkanKeKeranjang()">Masukan Keranjang</button>
+            </div>
+
+
+        </div>
+    </main>
+
+    <footer class="standard-footer">
+        <div class="footer-content">
+            <p>&copy;2025 FavourMedic. All rights reserved</p>
+            <p>
+                <a href="/html/tentangkami.html">Tentang Kami</a>
+                <a href="">Kontak</a>
+                <a href="">Kebijakan Privasi</a>
+            </p>
+        </div>
+
+    </footer>
+
+
+<script src="/js/detail-obat.js"></script> 
+
+</body>
+</html>

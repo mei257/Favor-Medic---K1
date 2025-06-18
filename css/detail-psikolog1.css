@@ -1,0 +1,86 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #F0F9F2;
+    margin: 0;
+    padding: 20px;
+}
+.container-detail-card{
+    max-width: 600px;
+    margin: auto;
+    background-color: #FFF8E7;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.img-container img{
+    height: 300px;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    background-color: #9a4747;
+}
+h2{
+    font-size: 20px;
+    margin-bottom: 10px 0 5px;
+    color: #333;
+}
+.price{
+    background-color:#A3E4D7;
+    padding: 10px;
+    font-weight: bold;
+    margin: 10px auto;
+    border-radius: 5px;
+    display: flex
+}
+
+.info-row{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    margin-bottom: 10px;
+    gap: 10px;
+}
+.info-box{
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    flex: 1;
+    font-size: 14px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: justify;
+}
+.extra-info{
+    /* margin-top: 20px; */
+    text-align: left;
+    font-size: 14px;
+    color: black;
+}
+.extra-info p{
+    font-size: 14px;
+}
+
+.description{
+    margin-top: 15px;
+    font-size: 14px;
+    color:black;
+    text-align: justify
+}
+
+.consult-btn{
+    width: 50%;
+    background-color: #28B463;
+    border: none;
+    color: white;
+    font-size: large;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    text-decoration: none;
+}
+.consult-btn:hover{
+    background-color: #02a11a;
+}

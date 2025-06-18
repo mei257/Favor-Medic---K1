@@ -1,0 +1,111 @@
+body{
+     font-family: Arial, Helvetica, sans-serif;
+    background: #F0F9F2;
+    margin: 0;
+    padding: 20px;
+}
+
+.container-formkonsul{
+    background: white;
+    border-radius: 15px;
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h2{
+    text-align: center;
+    font-size: 24px;
+    color: #145A32;
+}
+h4{
+    color: black;
+    margin-bottom: 15px;
+}
+label{
+    display: block;
+    margin: 10px 5px;
+    color: black;
+}
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="time"],
+select{
+    width: 100%;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #7F8C8D;
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+.select-jenis-kelamin{
+    display: flex;
+    gap: 20px;
+    margin: 5px 0px 15px 5px;
+    align-items: center;
+}
+
+.select-jenis-kelamin label{
+    display: flex;
+    align-items: center;
+    color: black;
+    margin: 0;
+}
+input::placeholder{
+    color: lightgrey;
+}
+.data-pasien {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+.data-pasien h4 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #145A32;
+}
+.data-grid{
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    row-gap: 10px;
+    column-gap: 10px;
+}
+.data-label{
+    color: black;
+}
+
+.data-value{
+    color: black;
+}
+
+.data-pasien p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #333;
+}
+
+
+button[type="submit"]{
+    display: block;
+    margin: 30px auto 0 auto;
+    width: 70%;
+    padding: 10px;
+    background-color: #28B463;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover{
+    background-color:  #02a11a;
+}

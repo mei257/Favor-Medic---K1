@@ -1,0 +1,139 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #dbeedf;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Menu Layanan Kesehatan Mental */
+.menu-kesmental{
+    margin: 20px;
+}
+
+h2{
+    font: 16px;
+    margin: 10px;
+}
+.services, 
+.issues{
+    display: flex;
+    gap: 50px;
+    overflow-x: auto;
+    padding: 10px;
+}
+
+.service-list,
+.service-list-selected,
+.issues-item{
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+    text-align: center;
+    box-shadow: 0 2px 6px gray;
+}
+
+.service-list img, .service-list-selected img, 
+.issues-item img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin: 5px 0px 5px 0px;
+    border-radius: 10px;
+}
+
+.service-list p,
+.service-list-selected p,
+.issues-item p{
+    font-size: 14px;
+    margin: 0;
+    color: black;
+}
+
+.service-list a{
+    text-decoration: none;
+    color: inherit
+}
+
+.service-list{
+    transition: background-color 0.3s ,transform 0.3s;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+}
+
+.service-list:hover{
+    background-color:#C8F0D4;
+    transform: scale(1.05);
+}
+
+.service-list:active{
+    background-color: #A8E0C4;
+    transform: scale(0.95);
+}
+
+.service-list-selected{
+    background-color:#28B463;
+    color: white;
+    pointer-events: none; /*biar gak bisa di klik*/
+    cursor: default;
+    text-decoration: none;
+}
+
+/* List Psikolog */
+
+.list-psikolog{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+.card-psikolog-item{
+    background-color:white;
+    display: flex;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    border-color: rgba(218, 56, 24, 0.866);
+}
+.card-psikolog-item img{
+    width: 150px;
+    height: 230px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.card-info{
+    flex: 1;
+}
+.card-info h3 {
+    margin: 10px;
+    font-size: 20px
+
+}
+.card-info h4{
+    margin: 10px;
+    color: black;
+}
+
+.chat-btn{
+    background: #28B463;
+    color: white;
+    border: none;
+    padding:10px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    width: 150px;
+    text-decoration: none;
+}
+
+.footer{
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #b6b6b6;
+    border-radius: 5px;
+}

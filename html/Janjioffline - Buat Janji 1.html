@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Buat Janji</title>
+    <link rel="stylesheet" href="/css/konsul-psikolog.css">
+</head>
+<body>
+    <div class="container-formkonsul">
+        <h2>Form Buat Janji</h2>
+        <label for="tanggal">Tanggal Janji :</label>
+        <input type="date" id="tanggal" name="tanggal" required>
+        <label for="jam">Jam Janji :</label>
+        <input type="time" id="jam" name="jam" required>
+
+        <label for="pasienSelect">Pilih Pasien :</label>
+        <select id="pasienSelect">
+            <option value="">--- Pilih Pasien ---</option>
+            <option value="dirisendiri">Saya Sendiri</option>
+            <option value="keluarga">+ Tambah Anggota Keluarga</option>
+        </select>
+        
+        
+        <!-- Auto fill jika pilih diri sendiri -->
+        <!-- Tambah pasien atau anggota keluarga baru -->
+         <div id="form-tambahkeluarga" class="data-pasien" style="display: none;">
+            <h2>Tambah Data Pasien Baru</h2>
+            <div class="form-section">
+                <h4>Informasi Umum</h4>
+                <label for="nama-calpasien">Nama Lengkap :</label>
+                <input type="text" name="nama_keluarga" placeholder="Masukkan nama lengkap calon pasien">
+
+                <label for="nik">NIK</label>
+                <input type="number" name="nik" placeholder="Masukkan NIK calon pasien">
+
+                <label for="tempat-lahir">Tempat Lahir</label>
+                <input type="text" name="tempat_lahir" placeholder="Masukkan tempat lahir calon pasien">
+
+                <label for="tanggal-lahir">Tanggal Lahir</label>
+                <input type="date" name="tanggal_lahir" placeholder="Masukkan tanggal lahir calon pasien">
+
+                
+                <div class="select-jenis-kelamin">
+                    <label><input type="radio" name="jenis-kelamin" value="pria">Pria</label>
+                    <label><input type="radio" name="jenis-kelamin" value="wanita">Wanita</label> 
+                </div>
+                               
+                <label for="berat-badan">Berat Badan</label>
+                <input type="number" name="berat-badan" placeholder="Masukkan berat badan calon pasien (kg)">
+
+                <label for="tinggi-badan">Tinggi Badan</label>
+                <input type="number" name="tinggi-badan" placeholder="Masukkan tinggi badan calon pasien (cm)">
+
+                <label for="goldar">Golongan Darah :</label>
+                <select name="goldar-pasien">
+                    <option value="">Pilih Golongan Darah</option>
+                    <option value="a">A</option>
+                    <option value="b">B</option>
+                    <option value="ab">AB</option>
+                    <option value="o">O</option>
+                </select>
+
+                <label for="alergi">Alergi :</label>
+                <input type="text" name="alergi" placeholder="Masukkan alergi calon pasien (jika ada)">
+
+            </div>
+         </div>
+         <button type="submit" id="submitBtn">Submit</button>
+    </div>
+    
+    <script src="../js/buat-janji.js"></script>
+</body>
+</html>

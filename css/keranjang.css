@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    background-color: #f9f9f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* BERANDA */
+/* Logo */
+.logo {
+  height: 100px;  
+  width: auto;   
+  display: inline-block;
+  vertical-align: middle;
+  padding: 6px 10px;              
+  border-radius: 50%;            
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);  
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+/* Header */
+header{
+    background-color: #4CAF50;
+    padding: 20px 16px;
+    color: white;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15) ;
+    position: relative;
+}
+
+header h1{
+    margin-bottom: 12px;
+    font-size: 28px;
+}
+/* Header */
+
+/* Navigation */
+.nav-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 10px;
+
+}
+
+.auth-button{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  gap: 10px;
+  
+}
+
+.auth-button a{
+  padding: 8px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  border: 2px solid white;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-masuk{
+  background-color: white;
+  color: #2e7d32;
+  text-decoration: none;
+}
+
+.btn-masuk:hover{
+  background-color: #c5f7cc;
+  color: #1b5e20;
+}
+
+.btn-daftar{
+  background-color: transparent;
+  color: white;
+  text-decoration: none;
+}
+
+.btn-daftar:hover{
+  background-color: white;
+  color: #2e7d32;
+}
+
+
+main{
+  flex: 1;
+}
+
+.main-nav{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.main-nav a, .dropbtn {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 6px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.main-nav a:hover{
+    background-color:rgba(255,255,255,0.3);
+}
+
+.dropdown-menu{
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+}
+.dropdown-layanan{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    border-radius: 6px;
+    z-index: 1000;
+    flex-direction: column;
+}
+.dropdown-layanan a {
+  padding: 10px 14px;
+  color: #333;
+  text-decoration: none;
+  display: block;
+  transition: background-color 0.2s ease;
+}
+
+.dropdown-layanan a:hover {
+  background-color: #f2f2f2;
+}
+
+.dropdown-menu:hover .dropdown-layanan {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navigation */ 
+
+/* section cart-container */
+.cart-container{
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    border: 1px solid rgba(76,175,80,0.3);
+    margin-top: 40px;
+    background: linear-gradient(135deg, rgba(76,175,80,0.15), rgba(200,255,200,0.1));
+
+}
+
+.cart-item{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.cart-summary{
+    text-align: right;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+button{
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #3e8e31;
+}
+
+
+
+/* Modal */
+.modal{
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content{
+  background-color: #feeffe;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 400px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+  position: relative;
+}
+
+.close-button{
+  color: #aaa;
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close-button:hover{
+  color: black;
+}
+
+
+
+/* Footer */
+
+
+.standard-footer{
+  background-color: #2e7d32;
+  color: white;
+  padding: 24px 16px;
+  text-align: center;
+  font-size: 14px;
+  margin-top: 40px;
+}
+
+.standard-footer a{
+  color: #ffffff;
+  text-decoration: underline;
+  margin: 0 6px;
+}
+
+.standard-footer a:hover{
+  color: #c5f7cc;
+}
